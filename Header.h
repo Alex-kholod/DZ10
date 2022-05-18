@@ -16,7 +16,7 @@ public:
 	string GetMidname();
 	int GetAge();
 	virtual void print() = 0;
-	~Human() {}
+	virtual ~Human() {}
 };
 
 class Student : public Human

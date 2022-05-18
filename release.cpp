@@ -30,9 +30,10 @@ int Human::GetAge()
 
 Student::Student() {}
 
-Student::Student(string name, string surname, string midname, int age, bool on_lessons) : Human(name, surname, midname, age)
+Student::Student(string name, string surname, string midname, int age, bool on_lessons) : Human(name, surname, midname, age),
+				on_lesson(on_lessons)
 {
-	this->on_lesson = on_lessons;
+	
 }
 
 Boss::Boss() {}
